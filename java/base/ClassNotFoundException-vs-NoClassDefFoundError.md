@@ -1,0 +1,4 @@
+##### ClassNotFoundException与NoClassDefFoundError的区别
+1. 从名字可以看出ClassNotFoundException是`java.lang.Exception`的子类，NoClassDefFoundError是`java.lang.Error`的子类
+2. 运行时在classpath中找不到要加载的类会抛出ClassNotFoundException，编译时能找到但是运行时在classpath中找不到要加载的类会发生NoClassDefFoundError
+3. 从第二点可以看出，ClassNotFoundException可能在使用Class.forName()或者ClassLoader#loadClass()或者重写ClassLoader的findSystemClass()时抛出；编译成功但是运行时无法创建对象或者调用类方法会由JVM抛出NoClassDefFoundError
