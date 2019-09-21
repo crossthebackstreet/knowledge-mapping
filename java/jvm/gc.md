@@ -47,7 +47,7 @@ Java中有四种引用，强引用(Strong Reference)、软引用(Soft Reference)
 
 Stop The World：GC进行时必须停顿所有Java执行线程。虚拟机有办法得知哪些地方存放着对象引用，在Hotspot中，是使用一组称为OopsMap的数据结构来存储，在OopsMap的协助下，Hotspot可以快速准确的完成GC Roots枚举。
 
-Minor GC、Major GC、Full GC的区别(参考[知乎问题](https://www.zhihu.com/question/41922036))
-Minor GC发生在新生代，出现非常频繁，回收速度快
-Major GC发生在老年代，出现Major GC通常至少触发一次Minor GC
+Minor GC、Major GC、Full GC的区别(参考[知乎问题](https://www.zhihu.com/question/41922036))\
+Minor GC发生在新生代，出现非常频繁，回收速度快\
+Major GC发生在老年代，出现Major GC通常至少触发一次Minor GC\
 Full GC是针对新生代、老年代、元空间(永久代)的全局范围GC
