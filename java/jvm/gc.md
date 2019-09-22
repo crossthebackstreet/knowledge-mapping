@@ -51,3 +51,9 @@ Minor GC、Major GC、Full GC的区别(参考[知乎问题](https://www.zhihu.co
 Minor GC发生在新生代，出现非常频繁，回收速度快\
 Major GC发生在老年代，出现Major GC通常至少触发一次Minor GC\
 Full GC是针对新生代、老年代、元空间(永久代)的全局范围GC
+
+#### 垃圾收集器
+![垃圾收集器]
+
+
+[垃圾收集器]: <../../_assets/garbage-collectors.png>

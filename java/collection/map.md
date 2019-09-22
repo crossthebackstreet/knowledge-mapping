@@ -1,5 +1,6 @@
 #### HashMap
-![HashMap](../images/HashMap.png)  
+![HashMap]
+
 ##### `put(K key, V value)`实现过程
 ```java
 public V put(K key, V value) {
@@ -55,10 +56,10 @@ resize()用于初始化数组或者将数组扩容为两倍，并设置参数，
 2. 如resize()扩容所讲，数组的大小是2的整数次幂，可以很巧妙地进行数据迁移，提高效率。由于hash值新增位可能是0也可能是1，可以使分布更加均匀。
 
 #### LinkedHashMap
-![LinkedHashMap](../images/LinkedHashMap.png)
+![LinkedHashMap]
 
 #### Hashtable
-![Hashtable](../images/Hashtable.png)
+![Hashtable]
 ##### Hashtable与HashMap的区别
 1. Hashtable继承Dictionary，HashMap继承AbstractMap
 2. HashMap允许null键和null值，Hashtable不允许null键和null值
@@ -69,5 +70,13 @@ resize()用于初始化数组或者将数组扩容为两倍，并设置参数，
 7. hash计算方法不一样，HashMap通过hash方法返回key的hash值，Hashtable直接使用key的hashCode()返回hash值
 
 #### ConcurrentHashMap
-![ConcurrentHashMap](../images/ConcurrentHashMap.png)  
+![ConcurrentHashMap]  
 在JDK1.8以前，ConcurrentHashMap使通过segment分段锁实现的，在JDK1.8开始通过CAS + synchronized实现
+
+#### SynchronizedMap
+SynchronizedMap是Collections类中的私有静态类，实现Map接口，通过`Map<K, V> Collections.synchronizedMap(Map<K, V> map)`获取，SynchronizedMap中的所有方法都使用synchronized代码块对操作加锁。
+
+[HashMap]: <../../_assets/HashMap.png>
+[LinkedHashMap]: <../../_assets/LinkedHashMap.png>
+[Hashtable]: <../../_assets/Hashtable.png>
+[ConcurrentHashMap]: <../../_assets/ConcurrentHashMap.png>
