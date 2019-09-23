@@ -1,3 +1,3 @@
-### fail-fast机制
+#### fail-fast机制
 
-### fail-safe机制
+#### fail-safe机制

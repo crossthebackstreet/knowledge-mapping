@@ -5,7 +5,7 @@
   
   - [JVM](java/jvm/)
     - [JVM运行时数据区](java/jvm/jvm-runtime-data-area)
-    - [垃圾收集](java/jvm/gc)
+    - [自动内存管理](java/jvm/memory-management)
     - [Java内存模型](java/jvm/java-memory-model)
     - [Java类加载机制](java/jvm/classload)
     - [Java多态](java/jvm/polymorphism)
