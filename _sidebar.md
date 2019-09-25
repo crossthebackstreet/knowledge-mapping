@@ -2,6 +2,7 @@
   - base
     - [ClassNotFoundException与NoClassDefFoundError](java/base/ClassNotFoundException-vs-NoClassDefFoundError)
     - [equals与hashCode](java/base/equals-and-hashcode)
+    - [设计模式](java/base/design-pattern)
   
   - [JVM](java/jvm/)
     - [JVM运行时数据区](java/jvm/jvm-runtime-data-area)
