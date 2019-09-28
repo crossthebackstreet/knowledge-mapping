@@ -6,7 +6,9 @@
 4. 进程可以独立存在，而线程脱离进程不能独立存在。
 
 #### Java线程状态
-Thread类的State枚举中定义了六种java线程状态  
+Thread类的State枚举中定义了六种java线程状态\
+![线程状态]
+
 `NEW`  
 通过new Thread()创建线程，但是还没有执行start()  
 `RUNNABLE`  
@@ -26,3 +28,6 @@ Thread类的State枚举中定义了六种java线程状态
 2. sleep可以在任何地方使用，wait只能在synchronized代码块或synchronized方法中。
 3. sleep会使线程进入TIMED_WAITING状态，无参的wait会使线程进入WAITING状态，有参的wait会使线程进入TIMED_WAITING状态。
 4. sleep会使线程挂起，但是不会释放持有的锁，wait会释放锁。
+
+
+[线程状态]:<../../_assets/thread-state.png>
