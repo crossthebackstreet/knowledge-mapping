@@ -14,13 +14,15 @@
   
   - [Java集合](java/collection/)
     - [Map](java/collection/map)
-    - [fail-fast与fail-safe](java/collection/fail-fast-and-fail-safe)
+    - [ConcurrentModificationException](java/collection/concurrentmodificationexception)
   
   - [多线程](java/multithread/)
     - [Java线程](java/multithread/thread)
     - [线程池](java/multithread/threadpool)
     - [synchronized](java/multithread/synchronized)
+    - [CAS](java/multithread/cas)
     - [volatile](java/multithread/volatile)
+    - [ThreadLocal](java/multithread/threadlocal)
   
   - [Spring](java/spring/)
     - [Spring AOP](java/spring/aop)
